@@ -1,0 +1,103 @@
+print("Guess the Word \n The goal of this task is to create a word guessing game where the user has to guess a secret word. \n "
+      "you have a three strikes to try guessing the secret word.\n "
+      "the secret word is ten Digits")
+
+word = "Alphabetic"
+game = ["_","_","_","_","_","_","_","_","_","_"]
+tried = 3
+life = "                                                                                                                       ❤❤❤"
+y = input("Do you want to play ? Y/N")
+if y.lower() == "n":
+      print("Thank you")
+else:
+      print(life)
+      for i in range(13):
+            print(game)
+            # print("☼☼☼")
+            v = input("Guess a letter: ")
+            if v.lower() == "a":
+                  # print("hi i am in A")
+                  game[0] = "A"
+                  game[4] ="a"
+                  print(game[0:9])
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'l':
+                  game[1] = 'l'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'p':
+                  game[2] = 'p'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'h':
+                  game[3] = 'h'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'b':
+
+                  game[5] = 'b'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower() == 'e':
+                  game[6] = 'e'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 't':
+                  game[7] = 't'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'i':
+                  game[8] ='i'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            elif v.lower()  == 'c':
+                  game[9] = 'c'
+                  # continue
+                  print(game)
+                  if game[0] == "A" and game[1] == "l" and game[2] == "p"and game[3] == "h"and game[4] == "a"and game[5] == "b"and game[6] == "e"and game[7] == "t"and game[8] == "i"and game[9] == "c"  :
+                        print("Correct ♪♫")
+                        break
+                  continue
+            else:
+                  tried = tried-1
+            print(game)
+            if tried == 0:
+                  print("sry, you loss. \n The word is ",word)
+                  break
+            elif tried == 1:
+                  life = "                                                                                                                         ❤"
+                  print(life)
+            else:
+                  life = "                                                                                                                        ❤❤"
+                  print(life)
